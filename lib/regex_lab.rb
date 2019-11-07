@@ -15,5 +15,5 @@ text.match(/^[A-Z].+\W$/) ? true : false
 end
 
 def valid_phone_number?(phone)
-phone.match(/\d[0-9]{7}/) ? true : false
+phone.scan(/\d[0-9]{7}/) ? true : false
 end
